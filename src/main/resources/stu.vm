@@ -1,4 +1,4 @@
-$strList=['str1','str2'])
+#set($strList=['str11','str21'])
 #foreach($stu in $stuList)
   $!{topic} ${foreach.count} 名学生
     ${stu.name}
