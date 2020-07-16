@@ -1,0 +1,5 @@
+#set($co="very good!")
+this is a $!{topic} test
+today is $!{date}
+${co}
+

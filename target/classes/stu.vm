@@ -1,0 +1,18 @@
+$strList=['str1','str2'])
+#foreach($stu in $stuList)
+  $!{topic} ${foreach.count} 名学生
+    ${stu.name}
+    ${stu.age}
+  #if(${stu.age} == 23)
+     找到学生了
+  #end
+  #if($!{stu.name}=='张三')
+     张三报道
+  #end
+
+#end
+
+遍历初始化数组
+#foreach($str in $strList)
+  $str
+#end
