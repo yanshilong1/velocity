@@ -1,0 +1,3 @@
+INFO main veloCityHelloWord - haohao
+DEBUG main veloCityHelloWord - haohao
+DEBUG main veloCityHelloWord - haohao

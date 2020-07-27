@@ -1,12 +1,11 @@
-import com.sun.org.apache.xerces.internal.impl.io.UTF8Reader;
 import entity.Stu;
-import lombok.Builder;
+import org.apache.log4j.Logger;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.runtime.RuntimeConstants;
 import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
-import sun.text.normalizer.UTF16;
+
 import util.initTemplateByName;
 
 import java.io.StringWriter;
@@ -22,7 +21,9 @@ import java.util.stream.Stream;
  * desc：变量赋值输出测试用例
  */
 public class veloCityHelloWord {
+   private static Logger logger=Logger.getLogger(veloCityHelloWord.class);
     public static void main(String[] args) {
+        logger.debug("haohao");
         //基本初始化赋值运算
         Template t = initTemplateByName.initTemplate("hellovelocity.vm");
 //        test1(t);

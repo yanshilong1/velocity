@@ -1,3 +1,6 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
 public class Test {
     public static void main(String[] args) {
 
@@ -8,7 +11,11 @@ public class Test {
         StackTraceElement e=stacks[1];
         System.out.println(e.getClassName());
         System.out.println(e.getMethodName());
-
+        String ss="222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222";
+        BigInteger v=new BigInteger(ss);
+        BigInteger s=new BigInteger("2");
+        System.out.println(v);
+        System.out.println(Long.MAX_VALUE);
 
     }
 }
