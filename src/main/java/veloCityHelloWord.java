@@ -87,12 +87,12 @@ public class veloCityHelloWord {
         VelocityContext context = new VelocityContext();
         context.put("topic", "第：");
 
-        Stu stu1 = new Stu("张三", 22);
-        Stu stu2 = new Stu("张四", 23);
-        Stu stu3 = new Stu("张五", 24);
-        List<Stu> stuList = new ArrayList<>(Arrays.asList(stu1, stu2, stu3));
-        context.put("stuList", stuList);
-        StringWriter sw = new StringWriter();
+//        Stu stu1 = new Stu("张三", 22);
+//        Stu stu2 = new Stu("张四", 23);
+//        Stu stu3 = new Stu("张五", 24);
+//        List<Stu> stuList = new ArrayList<>(Arrays.asList(stu1, stu2, stu3));
+//        context.put("stuList", stuList);
+//        StringWriter sw = new StringWriter();
 
 //        List a = Arrays.asList(context.getKeys());
 //        System.out.println("key:" + a);
@@ -107,12 +107,12 @@ public class veloCityHelloWord {
 //        System.out.println(sw);
 
 
-        velocityEngine.mergeTemplate("stu.vm","utf-8",context,sw);
-        List list= Stream.of(context.get("strList")).collect(Collectors.toList());
-        System.out.println(list);
-        list.add("strAdd");
-        list.add("strAdd1");
-        context.put("strList",list);
+//        velocityEngine.mergeTemplate("stu.vm","utf-8",context,sw);
+//        List list= Stream.of(context.get("strList")).collect(Collectors.toList());
+//        System.out.println(list);
+//        list.add("strAdd");
+//        list.add("strAdd1");
+//        context.put("strList",list);
 
     }
 

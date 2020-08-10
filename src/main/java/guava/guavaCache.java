@@ -4,6 +4,7 @@ import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import lombok.Data;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
@@ -16,6 +17,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Data
 @Getter
+@Slf4j
 public class guavaCache<K, V> {
 
 
@@ -52,8 +54,9 @@ public class guavaCache<K, V> {
             synchronized (guavaCache.class){
                 if(Objects.isNull(instance)){
                     instance=new guavaCache();
+                    log.info("初始化缓存对象-----");
                     //初始化instance
-                    instance.cache=CacheBuilder.newBuilder().maximumSize(Default_Maximum_Size).expireAfterWrite(expireTime <=0 ? Max_Expire_After_Write:expireTime, TimeUnit.SECONDS).
+                    instance.cache=CacheBuilder.newBuilder().maximumSize(Default_Maximum_Size).expireAfterWrite(expireTime <=0 ? Max_Expire_After_Write:expireTime, TimeUnit.MINUTES).
                             build();
                 }
             }

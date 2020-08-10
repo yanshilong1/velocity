@@ -28,4 +28,9 @@ public class Stu {
      * 年龄
      */
     private Integer age;
+
+    /**
+     * 方法或者字段描述
+     */
+    private long longval;
 }
