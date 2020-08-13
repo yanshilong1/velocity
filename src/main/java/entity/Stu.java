@@ -22,15 +22,15 @@ public class Stu {
     /**
      * 姓名
      */
-    private String name;
+    public String name;
 
     /**
      * 年龄
      */
-    private Integer age;
+    public Integer age;
 
     /**
      * 方法或者字段描述
      */
-    private long longval;
+    public long longval;
 }
