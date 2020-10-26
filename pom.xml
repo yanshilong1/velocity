@@ -41,6 +41,12 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.6.4</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mapdb/mapdb -->
+        <dependency>
+            <groupId>org.mapdb</groupId>
+            <artifactId>mapdb</artifactId>
+            <version>3.0.7</version>
+        </dependency>
 <!--        guava工具包-->
         <dependency>
             <groupId>com.google.guava</groupId>
