@@ -20,12 +20,12 @@
         </plugins>
     </build>
     <dependencies>
-<!--    velocity模板解析引擎-->
-    <dependency>
-        <groupId>org.apache.velocity</groupId>
-        <artifactId>velocity-engine-core</artifactId>
-        <version>2.2</version>
-    </dependency>
+        <!--    velocity模板解析引擎-->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.2</version>
+        </dependency>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -47,11 +47,11 @@
             <artifactId>mapdb</artifactId>
             <version>3.0.7</version>
         </dependency>
-<!--        guava工具包-->
+        <!--        guava工具包-->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>27.1-jre</version>
+            <version>19.0</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -65,6 +65,12 @@
             <version>1.16.18</version>
             <!-- provided表明该包只在编译和测试的时候用 -->
             <scope>provided</scope>
+        </dependency>
+        <!--        spring-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>4.3.10.RELEASE</version>
         </dependency>
     </dependencies>
 </project>
